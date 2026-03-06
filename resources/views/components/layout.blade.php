@@ -5,10 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-
+        <script rel="preload" src="https://cdn.tailwindcss.com"></script>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="bg-[#0a0a0a] text-[#1b1b18] flex flex-col p-4 min-h-screen">
-        {{ $slot }}
+    <body class="bg-[#454545] text-white flex p-4 h-screen">
+        <x-nav/>
+        <div class="pl-4">
+            {{ $slot }}
+        </div>
     </body>
 </html>
