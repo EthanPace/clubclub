@@ -1,2 +1,2 @@
 @props(['name' => 'Submit'])
-<button class="bg-[#1b1b18] text-[#0a0a0a] rounded p-2" type="submit">{{ $name }}</button>
+<button class="bg-base-800 hover:bg-accent-base text-white font-bold font-['Outfit'] rounded-xl p-2" type="submit">{{ $name }}</button>
