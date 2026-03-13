@@ -9,8 +9,8 @@
     </head>
     <body class="bg-base-900 text-white flex h-screen w-screen font-['Outfit']">
         <x-nav/>
-        <div class="p-4">
+        <main class="p-4 flex flex-col gap-4">
             {{ $slot }}
-        </div>
+        </main>
     </body>
 </html>

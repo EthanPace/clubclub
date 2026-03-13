@@ -26,7 +26,7 @@ class SessionController extends Controller
 
         request()->session()->regenerate();
 
-        return redirect('/');
+        return redirect('/clubs');
     }
 
     public function destroy() {
@@ -34,6 +34,6 @@ class SessionController extends Controller
 
         request()->session()->invalidate();
 
-        return redirect('route.home');
+        return redirect('/login');
     }
 }
